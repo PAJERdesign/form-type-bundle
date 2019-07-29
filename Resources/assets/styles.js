@@ -1,0 +1,1 @@
+require('./styles/modern_password.css');

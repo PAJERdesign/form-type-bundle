@@ -1,0 +1,27 @@
+{
+    "name": "pajer-design/form-type-bundle",
+    "type": "symfony-bundle",
+    "description": "Modern form types.",
+    "keywords": ["symfony", "form", "type", "formtype", "password", "fields"],
+    "homepage": "http://pajerdesign.pl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robert Pajer",
+            "email": "kontakt@pajerdesign.pl"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "symfony/framework-bundle": "~4.0",
+        "symfony/dependency-injection": "~4.0",
+        "symfony/form": "^3.4|^4.0",
+        "symfony/templating": "^3.4|^4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "@stable"
+    },
+    "autoload": {
+        "psr-4": { "PAJERdesign\\FormTypeBundle\\": "" }
+    }
+}

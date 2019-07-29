@@ -1,0 +1,9 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    PAJERdesign\FormTypeBundle\Form\Type\PasswordType:
+        class: PAJERdesign\FormTypeBundle\Form\Type\ModernPasswordType
+

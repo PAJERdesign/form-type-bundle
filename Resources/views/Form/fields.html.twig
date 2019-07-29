@@ -1,0 +1,7 @@
+{% block modern_password_widget %}
+    {% set attr = attr|merge({class: (attr.class|default('') ~ ' form-control')|trim}) %}
+    <div class="modern-password">
+        <input type="password" id="{{ id }}" name="{{ full_name }}" {%- if disabled %} disabled="disabled"{% endif -%} {%- if required %} required="required"{% endif -%} {{ block('attributes') }} {% if value is not empty %}value="{{ value }}" {% endif %}/>
+        <i class="switcher" onclick="switchType(document.getElementById('{{ id }}'))">switch</i>
+    </div>
+{% endblock %}
